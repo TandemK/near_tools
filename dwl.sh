@@ -11,4 +11,5 @@ echo "Snapshot in the $NET network - $LATEST"
 
 echo "Start download..."
 aws s3 sync --no-sign-request  s3://near-protocol-public/backups/$NET/rpc/$LATEST ./data_$NET\_$LATEST
+echo "End download"
 date | tee -a script.log
