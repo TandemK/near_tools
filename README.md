@@ -1,7 +1,8 @@
 # near_tools
 for create nodes
-
-<sub>docker build -t awscli https://raw.githubusercontent.com/TandemK/near_tools/main/dockerfile</sub>
+'''
+docker build -t awscli https://raw.githubusercontent.com/TandemK/near_tools/main/dockerfile
+'''
 
 > By default
 > NETWORK = mainnet
