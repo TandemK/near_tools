@@ -1,4 +1,4 @@
-# near_tools
+# Container with aws-cli
 For create image
 ```
 docker build -t awscli https://raw.githubusercontent.com/TandemK/near_tools/main/dockerfile
