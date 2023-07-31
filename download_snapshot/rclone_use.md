@@ -40,16 +40,18 @@ cat latest
 
 Add this value to URL:
 ```
-rclone copy --no-check-certificate \
+rclone copy --no-check-certificate --progress \
   near_s3://near-protocol-public/backups/mainnet/rpc/2023-06-30T02:15:36Z ./data_snap
 ```
 
 By default downloading start with 4 threads.
 If yoy increase threads add next key ` --tarnsfers=N `(where N is count of treads).
 ```
-rclone copy --no-check-certificate --transfers=6 \
+rclone copy --no-check-certificate --progress --transfers=6 \
   near_s3://near-protocol-public/backups/mainnet/rpc/2023-06-30T02:15:36Z ./data_snap
 ```
+You can change the download destination path of `./data_snap` to another path.
+Once downloaded, you should move the files folder to the node and rename it to `data`.
 
 Or use this script for download 
 ```
@@ -60,6 +62,6 @@ MODE=rpc
 rclone copy --no-check-certificate near_s3://near-protocol-public/backups/mainnet/rpc/latest ./
 LAST=$(cat latest)
 
-rclone copy --no-check-certificate --transfers=6 \
+rclone copy --no-check-certificate --progress --transfers=6 \
   near_s3://near-protocol-public/backups/$NET/$MODE/$LAST ./data_snap
 ```
