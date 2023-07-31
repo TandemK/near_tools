@@ -1,4 +1,3 @@
-# Scripts for NEAR nodes
 ## near_pinger_v2.sh
 For 'ping' account validator before change epoch with minimum interval.
 
