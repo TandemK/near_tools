@@ -59,7 +59,7 @@ Or use this script for download
 NET=mainnet
 MODE=rpc
 
-rclone copy --no-check-certificate near_s3://near-protocol-public/backups/mainnet/rpc/latest ./
+rclone copy --no-check-certificate near_s3://near-protocol-public/backups/$NET/$MODE/latest ./
 LAST=$(cat latest)
 
 rclone copy --no-check-certificate --progress --transfers=6 \
