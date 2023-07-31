@@ -50,8 +50,11 @@ If yoy increase threads add next key ` --tarnsfers=N `(where N is count of tread
 rclone copy --no-check-certificate --progress --transfers=6 \
   near_s3://near-protocol-public/backups/mainnet/rpc/2023-06-30T02:15:36Z ./data_snap
 ```
-You can change the download destination path of `./data_snap` to another path.
-Once downloaded, you should move the files folder to the node and rename it to `data`.
+> You can change the download destination path of `./data_snap` to another path.
+
+> Note that the snapshot size is approximately 500GB (as of 2023), so choose a database download path that fits even slightly larger than that size.
+
+> Once downloaded, you should move the files folder to the node and rename it to `data`.
 
 Or use this script for download 
 ```
