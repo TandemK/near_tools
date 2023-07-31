@@ -45,7 +45,7 @@ rclone copy --no-check-certificate --progress \
 ```
 
 By default downloading start with 4 threads.
-If yoy increase threads add next key ` --tarnsfers=N `(where N is count of treads).
+If you want to increase the number of threads, add the this key ` --tarnsfers=N `(where N is count of treads).
 ```
 rclone copy --no-check-certificate --progress --transfers=6 \
   near_s3://near-protocol-public/backups/mainnet/rpc/2023-06-30T02:15:36Z ./data_snap
