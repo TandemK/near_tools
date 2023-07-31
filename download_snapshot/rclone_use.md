@@ -3,7 +3,7 @@
 ### A. Because aws-cli uses a single download thread. 
 >Are you ready to wait more then 4 hours if you have speed of real download before 800MB/s?
 
-About rclone you can read about project and more [this](https://rclone.org) .
+About `rclone` you can read about project and more [this](https://rclone.org) .
 
 And about snapshots of database NEAR nodes [this](https://near-nodes.io/intro/node-data-snapshots) .
 ### Install rclone
@@ -44,8 +44,8 @@ rclone copy --no-check-certificate \
   near_s3://near-protocol-public/backups/mainnet/rpc/2023-06-30T02:15:36Z ./data_snap
 ```
 
-* By default downloading start with 4 threads
-If yoy increase threads add next key --tarnsfers=N (where N is count of treads)
+By default downloading start with 4 threads.
+If yoy increase threads add next key ` --tarnsfers=N `(where N is count of treads).
 ```
 rclone copy --no-check-certificate --transfers=6 \
   near_s3://near-protocol-public/backups/mainnet/rpc/2023-06-30T02:15:36Z ./data_snap
