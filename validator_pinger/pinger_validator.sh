@@ -7,7 +7,7 @@ RPC_PORT=3030
 LOG=/var/log/near_pinger.log
 STORAGE=/var/log/near_pinger_last_epoch.txt
 
-NEAR_ENV=mainnet
+export NEAR_ENV=mainnet
 ACCOUNT=       # who call "ping" - mypinger.near
 VALIDATOR=     # full name of account validator - nearfound.poolv1.near
 
